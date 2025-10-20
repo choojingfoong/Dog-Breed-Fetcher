@@ -33,7 +33,7 @@ public class DogApiBreedFetcher implements BreedFetcher {
         // return statement included so that the starter code can compile and run.
         final OkHttpClient client = new OkHttpClient().newBuilder().build();
         final Request request = new Request.Builder()
-                .url(String.format("https://dog.ceo/api/%s/hound/list", breed))
+                .url(String.format("https://dog.ceo/api/breed/%s/list", breed))
                 .build();
 
         List<String> subBreeds = new ArrayList<>();
